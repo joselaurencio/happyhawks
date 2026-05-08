@@ -30,7 +30,9 @@ const navItems = [
     children: [
       { name: "Outreach", href: "/outreach" },
       { name: "Sponsors", href: "/sponsors" },
-      { name: "Media", href: "/media" }
+      { name: "Media", href: "/media" },
+      { name: "Scouting", href: "/scouting" },
+      { name: "Resources", href: "/resources" }
     ]
   }
 ];
