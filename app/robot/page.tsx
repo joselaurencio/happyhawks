@@ -2,6 +2,7 @@ import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
 import { Settings, Cpu, Code2, PenTool } from "lucide-react";
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/constants";
 
 export default function Robot() {
   return (
@@ -17,7 +18,7 @@ export default function Robot() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="bg-slate-900 rounded-3xl min-h-[500px] border border-white/10 flex items-center justify-center relative overflow-hidden">
             <Image 
-              src="/images/robot.png" 
+              src={`${BASE_PATH}/images/robot.png`} 
               alt="Happy Hawks Robot" 
               fill 
               className="object-cover"

@@ -2,6 +2,7 @@ import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
 import { Globe2, Tent, Users2, BookOpen } from "lucide-react";
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/constants";
 
 const outreachEvents = [
   {
@@ -62,13 +63,13 @@ export default function Outreach() {
       <Section darker title="Outreach Gallery">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "img_0380_55210226389_o.jpg", "img_0362_55209985491_o.jpg", "img_0361_55209985571_o.jpg",
-            "img_0386_55210132603_o.jpg", "img_0355_55210383575_o.jpg", "img_0356_55210133773_o.jpg",
-            "img_0335_55210135148_o.jpg", "img_0332_55210135263_o.jpg"
+            "img_0301_55210137578_o.jpg", "img_0309_55209989221_o.jpg", "img_0317_55209083037_o.jpg",
+            "img_0326_55210229759_o.jpg", "img_0332_55210135263_o.jpg", "img_0339_55210228509_o.jpg",
+            "img_0348_55210134608_o.jpg", "img_0386_55210132603_o.jpg"
           ].map((filename, i) => (
             <div key={filename} className="relative aspect-square bg-slate-900 rounded-xl border border-white/5 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer overflow-hidden">
               <Image 
-                src={`/images/gallery/${filename}`} 
+                src={`${BASE_PATH}/images/gallery/${filename}`} 
                 alt={`Outreach Photo ${i + 1}`} 
                 fill 
                 className="object-cover opacity-80 hover:opacity-100 transition-opacity"

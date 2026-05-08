@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/constants";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -51,7 +52,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group z-50 relative">
           <div className="w-10 h-10 rounded-full overflow-hidden bg-white/5 border border-white/10 group-hover:scale-105 transition-transform shrink-0">
-            <Image src="/images/logo.jpeg" alt="Happy Hawks Logo" width={40} height={40} className="object-cover w-full h-full" />
+            <Image src={`${BASE_PATH}/images/logo.jpeg`} alt="Happy Hawks Logo" width={40} height={40} className="object-cover w-full h-full" />
           </div>
           <span className="text-xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors">Happy Hawks</span>
         </Link>

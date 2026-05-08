@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/constants";
 import { ArrowRight, Trophy, Users, Eye, Calendar, Award } from "lucide-react";
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
@@ -28,7 +29,7 @@ export default function Home() {
             {/* Logo */}
             <div className="flex justify-center mb-8">
               <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl shadow-blue-500/20 ring-4 ring-[#052680]/40">
-                <Image src="/images/logo.jpeg" alt="Happy Hawks Logo" width={144} height={144} className="object-cover w-full h-full" />
+                <Image src={`${BASE_PATH}/images/logo.jpeg`} alt="Happy Hawks Logo" width={144} height={144} className="object-cover w-full h-full" />
               </div>
             </div>
 

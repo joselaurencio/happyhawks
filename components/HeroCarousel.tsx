@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/constants";
 
 const images = [
   "55208981042_35dc2c11ee_o.jpg",
@@ -124,7 +125,7 @@ export function HeroCarousel() {
           className="absolute inset-0"
         >
           <Image
-            src={`/images/gallery/${images[index]}`}
+            src={`${BASE_PATH}/images/gallery/${images[index]}`}
             alt="Happy Hawks Competition"
             fill
             className="object-cover grayscale-[10%]"

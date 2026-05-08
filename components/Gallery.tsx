@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { BASE_PATH } from "@/lib/constants";
 
 const images = [
   "55208981042_35dc2c11ee_o.jpg",
@@ -133,7 +134,7 @@ export function Gallery() {
             onClick={() => setSelectedImage(i)}
           >
             <Image
-              src={`/images/gallery/${filename}`}
+              src={`${BASE_PATH}/images/gallery/${filename}`}
               alt={`Gallery Image ${i + 1}`}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -183,7 +184,7 @@ export function Gallery() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src={`/images/gallery/${images[selectedImage]}`}
+                src={`${BASE_PATH}/images/gallery/${images[selectedImage]}`}
                 alt="Selected Image"
                 fill
                 className="object-contain"

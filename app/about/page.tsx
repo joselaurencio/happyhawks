@@ -1,6 +1,7 @@
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/constants";
 import { User, Users } from "lucide-react";
 
 const teamMembers = [
@@ -62,7 +63,7 @@ export default function About() {
           </div>
           <div className="bg-slate-900 rounded-3xl border border-white/10 p-2 min-h-[400px] flex items-center justify-center relative overflow-hidden">
             <Image 
-              src="/images/gallery/img_0244_55210219559_o.jpg" 
+              src={`${BASE_PATH}/images/gallery/img_0244_55210219559_o.jpg`} 
               alt="Happy Hawks Robotics Team" 
               fill 
               className="object-cover rounded-2xl"
