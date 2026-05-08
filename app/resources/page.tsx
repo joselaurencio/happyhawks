@@ -1,11 +1,11 @@
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
-import { Github, FileText, Cpu, BookOpen, ExternalLink, Download } from "lucide-react";
+import { Code, FileText, Cpu, BookOpen, ExternalLink, Download } from "lucide-react";
 
 const resources = [
   {
     title: "Codebase",
-    icon: Github,
+    icon: Code,
     desc: "Our full control system, including PedroPathing trajectories, FSM logic, and sensor integration.",
     link: "https://github.com/joselaurencio/happyhawks",
     type: "GitHub"
