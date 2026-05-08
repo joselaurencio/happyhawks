@@ -1,0 +1,566 @@
+2 4 8 1 32025-2026
+Happy
+Hawks
+Portfolio
+Team Members & Roles
+Isaiah B.
+Business & Marketing
+Lead
+Leads business &
+marketing.
+Handles sponsorships,
+fundraising, and branding.
+Runs social media and
+tracks the team budget.
+Frank C.
+Building  Lead
+Leads the assembly of the
+robot and building
+components. Is involved in
+design and drive.
+Jose L.
+Programming &
+Team Captain
+Leads team day-to-day
+operation. Is involved in
+design, building, business,
+drive and leads
+programming procces.
+Sean G.
+Design Lead
+Leads the robots planned
+assembly and construction,
+with a focus on designs 3D
+printed components. Is
+involved in building and
+drive.
+Johanna A.
+Business & Marketing 
+Assists with organizing
+events, outreach, and
+promoting the teams image.
+Is involed in programming
+Andrea S.
+Driving Lead & Co
+Captain
+Leads the robot driving
+during matches and trains
+the driver team. 
+Brisa M
+Business & Marketing 
+Assists with organizing
+events, outreach, and
+promoting the teams image.
+Emilio S.
+Building 
+Assists with building the
+robot and coaching the
+drive team.
+
+Team Members & Roles
+Jordynn R.
+Business  & Marketing
+Lead:
+Handles sponsorships,
+assists with organizing
+events, and outreach.
+Victoria G.
+Builder:
+Supports robot assembly
+and contributing to
+improving components.
+Abel M
+Builder:
+Supports robot assembly
+and construction.
+Hennessy T.
+Director of
+Development:
+Leads in fundraisers, and
+excuting overall in
+fundraisers 
+Ivet L. 
+Director of Design:
+Leads the creative vision
+and strategy, guiding design
+teams to deliver cohesive,
+user-centered experiences
+that align with business
+goals.
+Bianca C.
+Builder:
+Supports robot assembly
+and construction,
+contributing to building
+and improving components.
+Ethan G.
+Builder:
+Supports robot assembly
+and construction,
+contributing to building
+and improving components.
+Nicola C. 
+Programmer:
+Designs, writes, and
+maintains code to build
+software, solve problems,
+and bring digital ideas to
+life.
+
+Team Name: 
+24813
+SHCA Happy Hawks
+Season: DECODE
+We are a student led robotics team focused on engineering, teamwork, and outreach. Our goal is to design a competitive robot
+while also growing leadership skills, communication, and community impact. Every member contributes to Building, Design,
+Programming, Business & Marketing, and Drive.
+Mission and Values
+Our mission is to create a positive, hardworking team
+environment where students learn real engineering skills and
+leadership. We value creativity, respect,  and strong
+communication. We believe robotics should be both
+competitive and welcoming to all students.
+Each member has a role so the team runs
+smoothly. Leadership focuses on
+communication and helping everyone
+feel included. We divide into sub-teams
+such as Building, Design, Programming,
+business/marketing, and Drive so work
+stays organized.
+Challenges and Growth
+Throughout the season we faced
+challenges like time management and
+testing new mechanisms. Instead of
+giving up, we worked together to adjust
+designs and improve teamwork. These
+challenges helped us grow stronger as a
+team.
+Future Goals
+Moving forward, we want to: Grow sponsorships and outreach, Develop fully
+custom Robot, Utilize 3D printer to fullest extent, Mentor younger students,
+and develop a new FTC team under our wing. 
+Season Highlights
+Hosted scrimmage
+Teached robotic classes in El
+Salvador
+Hosted robotic Vespers with NDAA
+Reached over 2,000+ people
+through Instagram
+Sponsored robotic parts to first
+Mexican-International Adventist
+robotics team
+Team Overview & Future Vision & Expansion
+Outreach & Marketing
+Sponsorships & Fundraising
+Sponsorships played a major role in supporting our team throughout the season. We built strong, professional relationships with
+Laurel Ridge Treatment Center, R&L Overhead Doors, and Fred’s Mobile Auto Services by clearly communicating our mission and
+demonstrating the impact of their support. Their contributions helped fund robot parts, competition expenses, and outreach
+opportunities.
+In addition to sponsorships, we organized a variety of fundraising initiatives, including a GoFundMe campaign, bake sale, food
+fundraiser, and Fall Fest activities such as a maze and dunk tank. We also coordinated sponsor outreach and hosted events like our
+scrimmage. These efforts not only helped us meet our financial needs but also strengthened our connection with the community
+and increased awareness of our team.
+Social Media & Branding
+Our business and marketing team focused on building a strong, consistent, and recognizable brand for the SHCA Happy Hawks. We
+created high-quality posts, graphics, and videos that showcased our progress, achievements, outreach efforts, and team culture
+while maintaining a cohesive visual style across all platforms.
+Our strategy led to measurable growth and engagement. One of our videos reached over 3,300 views, and we grew to 85 followers,
+showing steady interest from our community. Overall, we reached thousands of people online, including over 60,000 YouTube
+views. This strong digital presence allowed us to promote our team effectively, attract support, and maintain meaningful
+connections with sponsors and supporters.
+
+Outreach & Engagement 
+Fundraising Initiatives
+To support our season, we organized multiple fundraising efforts.
+Created a GoFundMe campaign to raise funds
+Organized a bake sale that generated significant support
+Coordinated sponsor outreach and meetings
+Planned and hosted events like the scrimmage
+These initiatives helped us reach our financial goals and ensured that our team could
+continue to compete and grow.
+Impact on Community
+ Our team is dedicated to making STEM accessible and inspiring students of all ages and
+backgrounds, and the following is how we achieved that!
+Introduced robotics through engaging outreach events, demonstrations, and
+presentations
+Reached over 1,200 people at a Central Texas camp meeting
+Demonstrated robotics to over 500 people at our church
+Reached tens of thousands through social media
+Supported a one-week summer robotics camp hosted by our team captain, where
+students learned building and programming through hands-on activities
+Allowed students to interact with our robot, sparking interest in STEM
+Encouraged creativity, confidence, and problem solving skills
+Aimed to show students they can be part of the future of engineering and innovation
+International Outreach – El
+Salvador/Mexico
+Our impact extended beyond our
+local community through
+international outreach efforts. We
+worked with students in El
+Salvador, teaching LEGO robotics to
+K–12 students and hosting a one-
+week program focused on building,
+programming, and teamwork. We
+also supported a robotics team in
+Mexico by providing robot parts to
+help them continue developing and
+competing. Through these
+experiences, we shared knowledge,
+built connections, and inspired
+students to explore STEM on a global
+level.
+Initiatives & Events
+This season, we actively promoted STEM through a variety of events and initiatives. One of
+our biggest accomplishments was hosting the first FTC Adventist Robotics Scrimmage,
+which provided teams with valuable practice, collaboration, and competition experience.
+We also participated in school and church events where we demonstrated our robot and
+allowed students to interact with it firsthand. These experiences made robotics more
+approachable and exciting, helping students see STEM as something they can be involved
+in.
+Event Coordination & Leadership
+Our team took on a strong leadership role in planning and organizing events throughout the season. We were responsible for managing
+logistics, coordinating schedules, and ensuring that each event ran smoothly and efficiently.
+For our scrimmage, we handled team registration, created match schedules, and managed the overall flow of the event. In addition, we
+mentored three robotics teams across different regions, providing guidance, support, and encouragement.
+Through these leadership experiences, we developed important skills in organization, communication, and teamwork while creating
+meaningful opportunities for others to grow in STEM.
+
+Mentors
+Dr. Arturo Montoya
+An Associate Professor at UTSA, Dr. Montoya helped launch our season with strong motivation and engineering insight. His
+guidance built our confidence and set a solid foundation for success.
+Mauricio Madrid
+A Texas A&M Mechanical Engineering graduate, Mauricio supported the design of our shooter and intake systems. He taught
+us to think of our robot as integrated systems, improving reliability and performance.
+Dr. Herta Montoya
+An Assistant Professor in Mechanical, Aerospace, and Industrial Engineering, Professor Montoya guided us in applying
+mechanical design and control systems, helping turn our ideas into a competitive robot.
+Sonia Sifuentes
+Our school’s robotics and math teacher, Mrs. Sifuentes provided consistent support, guidance, and encouragement throughout
+the season.
+Mrs. Acosta
+Our business and marketing mentor, Mrs. Acosta guided our outreach, branding, and presentation efforts.
+Letty Melero
+As our fundraiser coordinator, Letty helped organize and support efforts to reach our team’s financial goals.
+Everardo Sifuentes
+Everardo supported our programming efforts, helping improve our robot’s functionality and performance.
+
+Robot Design Process
+Observe: Find a Problem/Inconsistency or Bottleneck
+Ask: Why does the Problem occur
+Develop: A Hypothesis/Solution
+Test: The Hypothesis/Solution
+Analyze: The Results
+Record: The Outcomes to Portfolio
+Conclusion: Decide whether to further improve
+Rules to follow
+All updates to the robot must:
+1.Quick Repair Access
+2.Repeatable Autonomous Scoring
+3.Durable Drive Train/Structure
+4.Rapid Cycle Times
+5.Reliable Shot Accuracy
+6.Complies to FTC Rules/Standards
+It is Vital to Communicate All Ideas Between The Designers, Programmers, and
+Builders to Insure a Clean Execution of Our Goals!!!
+Engineering Design Process
+
+Intake development
+The Intake system underwent multiple development iterations: Initially we struggles to achieve a balance of rotational speed and
+torque, while the feeder experienced problems with inconsistent compression throughout as well as dead spots. The diverter also had
+its own problems allowing the intake of 2 or 4 artifacts. The most significant limiting factor was the limited intake size of previous
+designs.
+Our intake iterated from a single 6000 rpm motor, to
+a coupled 
+1150 rpm design, and finally a single 1150 motor with
+a 5:7 ratio motor to optimize speed to torque ratio.
+The feeder required many minor optimizations
+to the boot kickers in order to perfect the
+artifacts compresion with the guided hoods.
+The diverter was designed to meet several key requirements.
+Its length was optimized to fit within the robot while still
+creating a specified angle for the guided shooter, and its
+width was optimized to eliminate detrimental dead zones
+without slowing intake speed. A lofted gradient was also
+added to direct forces up and toward an intended path.
+Achieving this required many 3D iterations.
+When optimizing for cycle times, the size of the intake are critical.
+Our original REV-based design could only collect one artifact at a
+time, making it highly inefficient. The first iteration of our goBILDA-
+based design improved capacity to two artifacts but proved awkward
+in practice. In the final iteration, we implemented an overhang
+intake, significantly increasing efficiency by allowing the robot to
+collect multiple artifacts at once. This design widened the margin of
+error for drivers, resulting in faster and consistent cycle times.
+our hooded shooter has gone through 3 iterations and we have tried other shooting mechanisms such as a dual flywheel shooter and
+turret which we decided to scrap due to  time constraints and limited materials. so we decided to optimize our existing shooter 
+1 iterationst
+Our first shooter was an iteration
+of the rev starter robot. The
+shooting was inconsistent, even
+trying to keep the flywheel
+consistent in the same rpm range
+was difficult. The balls would shoot
+out at seemingly random distances.Shooter Development
+2  iteration  nd
+We reengineered the shooter using
+the same core concept as the REV
+design, using polyurethane sheets
+chosen for their high impact
+resistance and ability to handle
+higher loads, and flexibility.
+3  iteration rd
+To further improve shooting accuracy, we reduced excess friction that was
+causing unwanted backspin and inconsistent bounces by applying Teflon tape to
+key contact surfaces, minimizing spin and improving bounce consistency. We
+also incorporated plastic tubing as rails, which helped guide the ball ,
+enhancing overall consistency. Finally, we carefully tuned the system to balance
+flywheel speed in relation to the goal, resulting in a shooter that is reliable.
+turret prototype
+double flywheel
+prototype
+Through testing and refinement, we identified several key issues. The robot would occasionally misfire when holding two to three
+balls, and uneven weight distribution affected its stability. We also encountered accuracy and consistency challenges, with shots
+frequently bouncing out of the goal.  Additionally, we had concerns about durability, as exposed chains and gears left the robot
+vulnerable during frequent physical contact in matches.
+ Misfire?!
+The misfiring issue was caused
+by the intake pushing balls into
+the shooter prematurely, so we
+implemented servo controlled
+stoppers to prevent this.
+Weight Distribution
+The weight distribution issue was caused by having two motors and the battery positioned
+on the same side.  So we moved the battery to the opposite side, removed one motor, and
+movedthe remaining one to the middle of the robot.
+General optimization
+Robot Armor
+Concerns about our robot’s safety led us to add a
+protective layer. We chose polycarbonate due to
+its high impact resistance. As a thermoplastic, it
+can be gradually heated and bent to the right
+shape.
+not strong enoughfinal iteration not long enough & let balls through
+10% infill
+100% infill
+4mm width
+5mm width
+Software: Motion Control & Pathing
+PedroPathing is an advanced Reactive Vector Follower developed by FTC Team 10158. It uses Bézier
+curve generation to produce smooth, fast, and precise autonomous trajectories. Unlike time-based
+followers, PedroPathing is not speed-limited by its paths, allowing us to maximize our scoring and
+iteration within the 30-second autonomous window.
+Why PedroPathing over Roadrunner
+Through testing, we found PedroPathing was more precise at
+higher accelerations and better at correcting unexpected
+disturbances mid-path, which directly improves autonomous
+consistency.
+The Math Behind Reactive Vector Followers
+Pedro Pathing combines an attractive force pulling
+the robot toward the goal with repulsive forces
+avoiding obstacles. Recalculating the ideal
+movement vector every loop cycle. Overall
+pedropathing has so many good features its hard
+not to pick it.
+GoBilda Pinpoint Odom etry
+We use the GoBilda Pinpoint
+odometry computer combined with
+PedroPathing's localizer for
+position tracking. The Pinpoint
+reads two perpendicular dead
+wheels to give highly accurate X/Y
+displacement, feeding
+PedroPathing's follower with real-
+time pose data.
+4 Autonom ous Strategy
+We developed four autonomous routines for
+different starting positions on the field, allowing
+our robot to adapt based on alliance strategy and
+partner positioning. These routines are split
+between starting near the GOAL and starting in the
+back LAUNCH ZONE, each optimized for efficient
+pathing, fast cycling, and consistent scoring. By
+using smooth trajectories and coordinated
+intake/shooting sequences, each autonomous has
+the potential to score up to 12 ARTIFACTS while
+minimizing downtime and maximizing reliability.
+FSM AUTO FLOW
+IDLE  →   SPINUP   →  LAUNCH
+Our autonomous routine uses a 4-state Finite State
+Machine. The robot begins IDLE, then skips using
+the Limelight 3A to ALIGN to the target since the
+robot can just go to a preset point, SPINs UP the
+shooter to the calculated RPM, then LAUNCHes. This
+structure ensures each action only begins when the
+previous is complete, improving reliability.
+Shooter Alignment Distance → RPM RegressionAutonomous Target
+Detection
+The Limelight feeds
+heading error into a PD
+loop that rotates the
+robot until it is aligned
+with the target.Using the Limelight's ty (vertical angle), a
+linear regression formula calculates distance. A
+second regression then maps that distance to
+the required shooter RPM.In autonomous, the Limelight
+detects the field artifact
+pattern to determine starting
+configuration and select the
+correct path.
+Distance Estim ation
+via Target Area
+Regression
+The Limelight reports ta
+(target area as % of
+frame). As the robot
+moves closer, ta grows
+predictably. We can
+reverse that
+relationship to
+calculate distance.
+AREA_SCALE and
+AREA_EXPONENT were
+derived by collecting ta
+readings at known
+distances and fitting a
+power regression curve
+to the data.
+PD Alignm ent Loop
+The alignment system uses a PD (Proportional-
+Derivative) controller driven by the Limelight's
+horizontal angle (tx) as the error signal — tuned
+to kP = 0.02, kD = 0.003, deadband = 0.9°, and
+maxPower = 0.4. The robot continuously corrects
+its heading until tx falls within the deadband, at
+which point the FSM advances to SPINUP. Through
+comparative testing against a manual alignment
+approach assisted by RGB LED feedback, we found
+that experienced drivers could align faster
+manually. So for now the PD loop serves primarily
+as a fallback and consistency tool for newer
+drivers or high-pressure matches.
+LED Alignm ent Indicator
+A GoBilda PWM RGB LED gives drivers real-
+time alignment feedback. It turns red when
+the robot is outside the deadband and
+switches to green the moment alignment is
+achieved — eliminating guesswork during
+teleop.
+GoBilda Pinpoint + Encoders
+The Pinpoint odometry computer
+processes encoder ticks from two dead
+wheels to provide accurate field-
+relative positioning. Combined with the
+Limelight's relocalization capability, the
+robot maintains positional accuracy
+even after collisions or disturbances.
+LIMELIGHT 3A - Three Roles
+Software: Software: Sensors & Vision
+Physics Model Research Paper
+"Physics-Based Modeling and Vision-
+Assisted Optimization of a Flywheel
+Shooter for the FTC DECODE™ Robotics
+Game" - In Progress, Jose Laurencio
+Scan to view — this is a working draft,
+not a finalized paper.
+Full Code & Equations 
+All regression formulas, PD constants,
+and shooter code are documented in
+our public GitHub repository. (QR code
+to GitHub on the next page)
+The Problem
+RPM needed to vary with distance. Fixed RPM caused undershoot at far targets, overshoot at close ones. Instead we want the robot to be
+able to shoot from everywhere on the field.
+Shooter RPM Model
+Once distance is calculated, a linear regression maps it directly to the
+required shooter RPM:
+Constants were derived empirically by recording shooter RPM and
+measuring resulting shot accuracy at multiple distances. The model
+allows the robot to automatically set the correct flywheel speed from
+any field position — no manual adjustment needed between shots.
+R P M  =  8 . 5 4  ×  d i s t a n c e  +  1 7 1 8 . 6
+Physics-Based Model - Research in Progress
+Our programming lead began developing a physics-based shooter model as an
+alternative to empirical tuning. The model aimed to calculate required RPM
+from physics principles  using projectile motion, flywheel inertia, and game
+piece aerodynamics rather than collected data points. While the approach was
+theoretically more generalizable, it was not implemented this season due to
+the complexity of tuning the physical constants accurately within our timeline.
+The research paper is ongoing and available to view below.
+Software: Shooter System
+Software: Architecture & Teleop
+Finite State Machine Architecture
+Our entire robot is controlled through a Finite State Machine.
+Rather than running commands in sequence, the FSM defines
+discrete robot states and the conditions required to transition
+between them. This makes the code modular, easy to debug, and
+reliable under match pressure.
+Flow diagram (main teleop FSM):
+IDLE → ALIGN → SPINUP → LAUNCH → (back to IDLE)
+Each state has a clear entry condition, active behavior, and exit
+condition. No state can be skipped, preventing partial execution
+errors.
+Why FSM over Linear Code
+Linear OpMode FSM
+Steps run in order, blockingStates run in parallel, non-
+blocking
+Hard to interrupt mid-action Clean transitions at any point
+Difficult to debug Each state is isolated and testable
+Teleop Highlights
+Self-Aligning: Driver holds a button → FSM transitions to ALIGN → Limelight PD loop corrects heading automatically → releases control back to
+driver once locked on
+Auto-RPM: Once aligned, shooter PIDF spins up to the regression-calculated RPM automatically — driver only needs to trigger launch
+Stall Protection: Intake motor monitors current draw; when a stall is detected, the motor cuts power automatically to prevent burnout (directly
+addresses the burned motor issue from earlier in the season)
+Dual Launch Modes (Vision & Manual): The robot supports two shooting modes toggled with the BACK button. In Vision Mode, the Limelight
+calculates distance and automatically sets the flywheel RPM. In Manual Mode, the driver aims freely while the robot still pulls a distance-based
+RPM snapshot from the Limelight at the moment of trigger — preserving accuracy without requiring alignment.
+Dynamic Target Offset: Rather than using a fixed alignment target, the robot calculates a distance-dependent horizontal offset for each
+shooter left or right (BASE_OFFSET + distance × DISTANCE_FACTOR ± SHOOTER_OFFSET), accounting for the physical separation between the two
+flywheels at varying ranges.
+RGB Alignment Indicator: A GoBilda PWM RGB LED linearly interpolates between red and green based on alignment error. It turns fully green
+only when tx falls within the deadband — giving drivers a clear visual lock confirmation without reading telemetry.
+Manual Shot Data Logging: During manual shots, the robot logs the exact velocity target via telemetry (Manual L/R target TPS). This allowed
+the team to collect RPM-at-distance data points at known field positions, which directly fed into building and validating the shooter regression
+model.
+ Public GitHub Repository
+Our full codebase is publicly available on GitHub
+for other teams to reference, learn from, and
+build upon. It’s also really important for our
+version control and documentation to see how
+our code changed throughout the season.
+HappyHawks/ftc-decode on github.
+Autonomous Score Progress
+Max autonomous score: 29 pts | Avg improving toward consistent 20+
+Continued development focused on faster cycles and shooter PID consistency
+Milestone Software
+ImplementationResulting Impact
+Pathing Upgrade Switched from Linear
+OpMode to PedroPathing.Faster, non-blocking cycles
+within the 30s window.
+Vision Lock Integrated Limelight 3A
+with a PD alignment loop.Higher accuracy;
+eliminated missed shots due
+Logic Maturity Moved full control to a
+Finite State Machine (FSM).Reliability; eliminated
+partial execution errors
+
+Closing & Connect
+Closing Statement 
+The SHCA Happy Hawks are committed to growing in STEM, strengthening our teamwork, and continuing to make a positive impact in our community
+and beyond. This season has allowed us to develop our technical skills, leadership, communication, and outreach efforts while inspiring others to
+explore robotics.
+We are proud of the progress we have made and excited to continue building, learning, and sharing our passion for STEM in the future.
+Thank You 
+Thank you to our sponsors, mentors, school, church community, and supporters for believing
+in our team. Your encouragement and support make it possible for us to compete, grow, and
+reach more students each season.
+We truly appreciate everyone who has contributed to our journey.
+Connect With Us
+Learn more about our team on our website:
+Follow us on Instagram:
+         
+   @shcarobotics
+Stay connected to see our progress, outreach, events, and future
+updates!
+
