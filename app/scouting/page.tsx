@@ -37,11 +37,10 @@ const teamsData: TeamData[] = [
 ];
 
 const timeline = [
-  { event: "Season Kickoff", date: "Sept 2025", desc: "DECODE season revealed. Initial strategy brainstormed.", status: "completed" },
-  { event: "First Scrimmage", date: "Nov 2025", desc: "Tested intake iterations and PedroPathing stability.", status: "completed" },
-  { event: "League Meet #1", date: "Jan 2026", desc: "Secured top seed with consistent 80+ OPR.", status: "completed" },
-  { event: "Regional Finals", date: "Feb 2026", desc: "Qualified for State with Inspire Award 1st Place.", status: "active" },
-  { event: "Adventist Championship", date: "April 2026", desc: "Final championship event at Forest Lake Academy.", status: "upcoming" },
+  { event: "Rookie Season (CENTERSTAGE)", date: "April 2024", desc: "Competed in our first Adventist Robotics FTC Championship at Forest Lake Academy. Placed Rank 11.", status: "completed" },
+  { event: "Into The Deep Season", date: "April 2025", desc: "Returned to the Adventist Robotics League Championship. Improved performance significantly, finishing Rank 8 with a 32.5 OPR.", status: "completed" },
+  { event: "DECODE Season Preparation", date: "Present", desc: "Designing new mechanisms, training drivers, and refining autonomous routines for the upcoming challenge.", status: "active" },
+  { event: "Adventist Championship", date: "April 2026", desc: "Our ultimate goal for the season. Preparing to bring our best robot yet to Forest Lake Academy.", status: "upcoming" },
 ];
 
 export default function Scouting() {
