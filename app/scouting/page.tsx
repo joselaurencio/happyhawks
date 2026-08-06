@@ -5,6 +5,8 @@ import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
 import { Search, TrendingUp, Target, BarChart3, Clock, Map, ChevronUp, ChevronDown, Award, Zap, Cpu } from "lucide-react";
 import { motion } from "framer-motion";
+import ScoutingGate from "@/components/ScoutingGate";
+import LiveTeamWidget from "@/components/LiveTeamWidget";
 
 interface TeamData {
   rank: number;
@@ -83,12 +85,16 @@ export default function Scouting() {
   };
 
   return (
-    <>
+    <ScoutingGate>
       <div className="pt-32 pb-16 bg-slate-950 border-b border-white/5">
         <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">Scouting & Analysis</h1>
           <p className="text-xl text-slate-400">Deep dive into every team in the Adventist Robotics League DECODE Season.</p>
         </div>
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 py-12">
+        <LiveTeamWidget />
       </div>
 
       <Section title="Championship Timeline">
@@ -143,8 +149,8 @@ export default function Scouting() {
               />
             </div>
             <div className="hidden md:flex items-center gap-2 text-xs font-mono text-slate-500">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              UPDATED LIVE: APRIL 2026
+              <span className="w-2 h-2 rounded-full bg-amber-400/80" />
+              LEAGUE DATA: MANUAL ENTRY
             </div>
           </div>
           
@@ -243,6 +249,6 @@ export default function Scouting() {
           </AnimatedCard>
         </div>
       </Section>
-    </>
+    </ScoutingGate>
   );
 }
