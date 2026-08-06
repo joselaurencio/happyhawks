@@ -85,17 +85,21 @@ export default function Outreach() {
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             We believe that knowledge should be free. We actively publish tutorials, match breakdowns, and CAD designs on our YouTube channel and social media to help other teams grow.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20">
-              <div className="text-3xl font-bold text-white mb-1">60k+</div>
+              <div className="text-3xl font-bold text-white mb-1">1.16K+</div>
+              <div className="text-blue-200 text-sm">YouTube Subscribers</div>
+            </div>
+            <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20">
+              <div className="text-3xl font-bold text-white mb-1">93.6K+</div>
               <div className="text-blue-200 text-sm">YouTube Views</div>
             </div>
             <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20">
-              <div className="text-3xl font-bold text-white mb-1">3.3k+</div>
+              <div className="text-3xl font-bold text-white mb-1">31.8K+</div>
               <div className="text-blue-200 text-sm">Views on Top Video</div>
             </div>
             <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20">
-              <div className="text-3xl font-bold text-white mb-1">2,000+</div>
+              <div className="text-3xl font-bold text-white mb-1">112K+</div>
               <div className="text-blue-200 text-sm">Instagram Reach</div>
             </div>
           </div>
