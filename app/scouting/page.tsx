@@ -3,10 +3,8 @@
 import { useState, useMemo } from "react";
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
-import { Search, TrendingUp, Target, BarChart3, Clock, Map, ChevronUp, ChevronDown, Award, Zap, Cpu } from "lucide-react";
-import { motion } from "framer-motion";
+import { Search, ChevronUp, ChevronDown, Award, Zap, Cpu } from "lucide-react";
 import ScoutingGate from "@/components/ScoutingGate";
-import LiveTeamWidget from "@/components/LiveTeamWidget";
 
 interface TeamData {
   rank: number;
@@ -36,13 +34,6 @@ const teamsData: TeamData[] = [
   { rank: 13, team_number: "19882", name: "Mile High Academy", opr: 22.15, auto_avg: 6.2, rs: 1.80, record: "2-3-0", driving_score: 15.95, auto_focus: "28.0%" },
   { rank: 14, team_number: "25567", name: "Robo-Raptors", opr: 18.45, auto_avg: 4.1, rs: 1.60, record: "1-4-0", driving_score: 14.35, auto_focus: "22.2%" },
   { rank: 15, team_number: "32401", name: "Cyber Wolves", opr: 9.88, auto_avg: 1.2, rs: 1.20, record: "1-4-0", driving_score: 8.68, auto_focus: "12.1%" }
-];
-
-const timeline = [
-  { event: "Rookie Season (CENTERSTAGE)", date: "April 2024", desc: "Competed in our first Adventist Robotics FTC Championship at Forest Lake Academy. Placed Rank 11.", status: "completed" },
-  { event: "Into The Deep Season", date: "April 2025", desc: "Returned to the Adventist Robotics League Championship. Improved performance significantly, finishing Rank 8 with a 32.5 OPR.", status: "completed" },
-  { event: "DECODE Season Preparation", date: "Present", desc: "Designing new mechanisms, training drivers, and refining autonomous routines for the upcoming challenge.", status: "active" },
-  { event: "Adventist Championship", date: "April 2026", desc: "Our ultimate goal for the season. Preparing to bring our best robot yet to Forest Lake Academy.", status: "upcoming" },
 ];
 
 export default function Scouting() {
@@ -89,51 +80,9 @@ export default function Scouting() {
       <div className="pt-32 pb-16 bg-slate-950 border-b border-white/5">
         <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">Scouting & Analysis</h1>
-          <p className="text-xl text-slate-400">Deep dive into every team in the Adventist Robotics League DECODE Season.</p>
+          <p className="text-xl text-slate-400">Scout every team competing in the Adventist Robotics League and plan your matches.</p>
         </div>
       </div>
-
-      <div className="container mx-auto px-6 md:px-12 py-12">
-        <LiveTeamWidget />
-      </div>
-
-      <Section title="Championship Timeline">
-        <div className="relative">
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2 hidden md:block" />
-          <div className="space-y-12">
-            {timeline.map((item, i) => (
-              <div key={item.event} className={`flex flex-col md:flex-row items-start md:items-center gap-8 ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                <div className="flex-1 w-full">
-                  <AnimatedCard delay={i * 0.1}>
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-widest ${
-                        item.status === 'completed' ? 'bg-green-500/20 text-green-400' :
-                        item.status === 'active' ? 'bg-blue-500/20 text-blue-400 animate-pulse' :
-                        'bg-slate-800 text-slate-500'
-                      }`}>
-                        {item.status}
-                      </span>
-                      <span className="text-slate-500 text-xs font-mono">{item.date}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-2">{item.event}</h3>
-                    <p className="text-slate-400 text-sm">{item.desc}</p>
-                  </AnimatedCard>
-                </div>
-                <div className="relative z-10">
-                  <div className={`w-8 h-8 rounded-full border-4 border-slate-950 flex items-center justify-center ${
-                    item.status === 'completed' ? 'bg-green-500' :
-                    item.status === 'active' ? 'bg-blue-500' :
-                    'bg-slate-800'
-                  }`}>
-                    {item.status === 'completed' && <Clock className="w-4 h-4 text-white" />}
-                  </div>
-                </div>
-                <div className="flex-1 hidden md:block" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
 
       <Section darker title="League Standings & Custom Metrics" subtitle="Sorting by Driving Skill (D-Score) and Autonomous Efficiency">
         <div className="bg-slate-950 rounded-3xl border border-white/10 overflow-hidden mb-12">
