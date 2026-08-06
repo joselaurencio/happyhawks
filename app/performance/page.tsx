@@ -1,6 +1,14 @@
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
-import { Trophy, TrendingUp, Medal, Star, Award, Target } from "lucide-react";
+import { Trophy, TrendingUp, Medal, Star, Award, Target, Clock } from "lucide-react";
+import LiveTeamWidget from "@/components/LiveTeamWidget";
+
+const timeline = [
+  { event: "Rookie Season (CENTERSTAGE)", date: "April 2024", desc: "Competed in our first Adventist Robotics FTC Championship at Forest Lake Academy. Placed Rank 11.", status: "completed" },
+  { event: "Into The Deep Season", date: "April 2025", desc: "Returned to the Adventist Robotics League Championship. Improved performance significantly, finishing Rank 8 with a 32.5 OPR.", status: "completed" },
+  { event: "DECODE Season", date: "April 2026", desc: "Our strongest season yet — 81.25 OPR, Rank 2 at the Adventist Robotics Championship, and the Inspire Award.", status: "completed" },
+  { event: "BIOBUZZ Season (2026-2027)", date: "Kickoff · September 2026", desc: "Waiting on the new challenge release. Designing mechanisms, training drivers, and refining autonomous routines.", status: "upcoming" },
+];
 
 export default function Performance() {
   return (
@@ -19,6 +27,10 @@ export default function Performance() {
             A data-driven look at our competitive trajectory across seasons, highlighting our continuous improvement in OPR, global rankings, and award recognition.
           </p>
         </div>
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 py-12">
+        <LiveTeamWidget />
       </div>
 
       {/* CURRENT SEASON: DECODE */}
@@ -145,6 +157,45 @@ export default function Performance() {
               Our rookie year laid the groundwork. We focused heavily on learning proper engineering documentation (Think Award) and experimenting with sensor-based programming (Control Award).
             </p>
           </AnimatedCard>
+        </div>
+      </Section>
+
+      {/* CHAMPIONSHIP TIMELINE */}
+      <Section title="Championship Timeline">
+        <div className="relative">
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2 hidden md:block" />
+          <div className="space-y-12">
+            {timeline.map((item, i) => (
+              <div key={item.event} className={`flex flex-col md:flex-row items-start md:items-center gap-8 ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                <div className="flex-1 w-full">
+                  <AnimatedCard delay={i * 0.1}>
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-widest ${
+                        item.status === 'completed' ? 'bg-green-500/20 text-green-400' :
+                        item.status === 'active' ? 'bg-blue-500/20 text-blue-400 animate-pulse' :
+                        'bg-slate-800 text-slate-500'
+                      }`}>
+                        {item.status}
+                      </span>
+                      <span className="text-slate-500 text-xs font-mono">{item.date}</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-2">{item.event}</h3>
+                    <p className="text-slate-400 text-sm">{item.desc}</p>
+                  </AnimatedCard>
+                </div>
+                <div className="relative z-10">
+                  <div className={`w-8 h-8 rounded-full border-4 border-slate-950 flex items-center justify-center ${
+                    item.status === 'completed' ? 'bg-green-500' :
+                    item.status === 'active' ? 'bg-blue-500' :
+                    'bg-slate-800'
+                  }`}>
+                    {item.status === 'completed' && <Clock className="w-4 h-4 text-white" />}
+                  </div>
+                </div>
+                <div className="flex-1 hidden md:block" />
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
     </>
