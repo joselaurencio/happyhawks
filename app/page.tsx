@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BASE_PATH } from "@/lib/constants";
-import { ArrowRight, Trophy, Users, Eye, Calendar, Award } from "lucide-react";
+import { ArrowRight, Trophy, Users, Eye, Calendar, Award, MonitorPlay, Clapperboard, Megaphone } from "lucide-react";
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
 
@@ -12,6 +12,13 @@ const stats = [
   { icon: Award, value: "Top 12%", label: "Global Rank (941st)" },
   { icon: Users, value: "Inspire", label: "Award Winner" },
   { icon: Eye, value: "4-1-0", label: "Season Record" },
+];
+
+const socialStats = [
+  { icon: MonitorPlay, value: "1.16K+", label: "YouTube Subscribers" },
+  { icon: Eye, value: "93.6K+", label: "YouTube Views" },
+  { icon: Clapperboard, value: "31.8K+", label: "Views on Top Video" },
+  { icon: Megaphone, value: "112K+", label: "Instagram Reach" },
 ];
 
 export default function Home() {
@@ -75,6 +82,25 @@ export default function Home() {
               <div className="text-slate-400 font-medium text-sm uppercase tracking-wider">{stat.label}</div>
             </AnimatedCard>
           ))}
+        </div>
+      </Section>
+
+      {/* Social Impact Stats */}
+      <Section title="Sharing STEM With the World" subtitle="Our online community keeps growing">
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-8 md:p-12 text-center border border-white/10">
+          <h2 className="text-3xl font-bold text-white mb-4">Impact Beyond the Competition</h2>
+          <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
+            We publish free tutorials, match breakdowns, and CAD designs to help teams everywhere build and learn.
+          </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {socialStats.map((stat, i) => (
+              <div key={stat.label} className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20">
+                <stat.icon className="w-8 h-8 mx-auto text-white mb-3" />
+                <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
+                <div className="text-blue-200 text-sm">{stat.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
 
