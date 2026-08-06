@@ -1,6 +1,6 @@
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
-import { Globe2, Tent, Users2, BookOpen } from "lucide-react";
+import { Globe2, Users2, BookOpen, HeartHandshake } from "lucide-react";
 
 const outreachEvents = [
   {
@@ -17,7 +17,7 @@ const outreachEvents = [
   },
   {
     title: "Mexican-International Support",
-    icon: Tent,
+    icon: HeartHandshake,
     desc: "We sponsored and provided robot parts to the first Mexican-International Adventist robotics team to help them continue developing and competing.",
     stats: "Equipment Sponsorship"
   },
