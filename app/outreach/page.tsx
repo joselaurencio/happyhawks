@@ -70,7 +70,7 @@ export default function Outreach() {
               <div className="text-blue-200 text-sm">YouTube Subscribers</div>
             </div>
             <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20">
-              <div className="text-3xl font-bold text-white mb-1">93.6K+</div>
+              <div className="text-3xl font-bold text-white mb-1">95K+</div>
               <div className="text-blue-200 text-sm">YouTube Views</div>
             </div>
             <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20">
