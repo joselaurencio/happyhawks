@@ -1,6 +1,7 @@
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
 import { Code, FileText, Cpu, BookOpen, ExternalLink, Download } from "lucide-react";
+import { BASE_PATH } from "@/lib/constants";
 
 const resources = [
   {
@@ -13,22 +14,22 @@ const resources = [
   {
     title: "Engineering Portfolio",
     icon: FileText,
-    desc: "The 2024-2025 'DECODE' portfolio detailing our design process, math, and outreach impact.",
-    link: "/portfolios/Happy Hawks Portfolio 2024-2025.pdf",
+    desc: "The 2025-2026 'DECODE' portfolio detailing our design process, math, and outreach impact.",
+    link: `${BASE_PATH}/portfolio/Happy_Hawks_Portfolio_25_26.pdf`,
     type: "PDF"
   },
   {
     title: "Onshape CAD Model",
     icon: Cpu,
     desc: "Full 3D model of our robot. Every part is available for inspection and measurement.",
-    link: "#",
+    link: null,
     type: "CAD"
   },
   {
     title: "OpenCV Scouting Logic",
     icon: BookOpen,
     desc: "Documentation on our experimental YOLO-based individual robot tracking system.",
-    link: "#",
+    link: null,
     type: "White Paper"
   }
 ];
@@ -54,19 +55,26 @@ export default function Resources() {
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold uppercase tracking-wider text-blue-500">{res.type}</span>
-                    <a href={res.link} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
+                    {res.link && <a href={res.link} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
                       <ExternalLink className="w-4 h-4" />
-                    </a>
+                    </a>}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">{res.title}</h3>
                   <p className="text-slate-400 mb-6 text-sm leading-relaxed">{res.desc}</p>
-                  <a 
-                    href={res.link} 
-                    className="inline-flex items-center gap-2 text-sm font-bold text-white bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg border border-white/10 transition-all"
-                  >
-                    {res.type === 'PDF' ? <Download className="w-4 h-4" /> : <ExternalLink className="w-4 h-4" />}
-                    {res.type === 'PDF' ? 'Download' : 'View Resource'}
-                  </a>
+                  {res.link ? (
+                    <a 
+                      href={res.link} 
+                      className="inline-flex items-center gap-2 text-sm font-bold text-white bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg border border-white/10 transition-all"
+                    >
+                      {res.type === 'PDF' ? <Download className="w-4 h-4" /> : <ExternalLink className="w-4 h-4" />}
+                      {res.type === 'PDF' ? 'Download' : 'View Resource'}
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-2 text-sm font-bold text-white/40 px-4 py-2 rounded-lg border border-white/10 cursor-not-allowed">
+                      <ExternalLink className="w-4 h-4" />
+                      Coming Soon
+                    </span>
+                  )}
                 </div>
               </div>
             </AnimatedCard>

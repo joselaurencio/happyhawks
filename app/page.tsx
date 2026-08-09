@@ -164,7 +164,7 @@ export default function Home() {
             </div>
             <div className="bg-slate-950 min-h-[400px] relative rounded-r-2xl overflow-hidden flex items-center justify-center border-l border-white/5">
               <Image 
-                src="/images/robot.png" 
+                src={`${BASE_PATH}/images/robot.png`} 
                 alt="FTC Robot Render" 
                 fill 
                 className="object-cover"

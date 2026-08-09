@@ -1,8 +1,21 @@
 import { Section } from "@/components/Section";
-import { Play } from "lucide-react";
+import { Play, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { Gallery } from "@/components/Gallery";
 import { BASE_PATH } from "@/lib/constants";
+
+const videos = [
+  {
+    title: "Robot Reveal 2024",
+    thumbnail: `${BASE_PATH}/images/gallery/img_0244_55210219559_o.jpg`,
+    link: "#",
+  },
+  {
+    title: "State Championship Highlights",
+    thumbnail: `${BASE_PATH}/images/hero-bg.jpg`,
+    link: "#",
+  },
+];
 
 export default function Media() {
   return (
@@ -16,22 +29,25 @@ export default function Media() {
 
       <Section title="Featured Videos">
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-white/10 aspect-video flex items-center justify-center cursor-pointer">
-            <Image src={`${BASE_PATH}/images/gallery/img_0244_55210219559_o.jpg`} alt="Robot Reveal" fill className="object-cover opacity-70 group-hover:opacity-50 transition-opacity" />
-            <div className="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/30 transition-colors z-10" />
-            <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center z-20 group-hover:scale-110 transition-transform">
-              <Play className="w-6 h-6 text-white ml-1" />
-            </div>
-            <span className="absolute bottom-6 left-6 z-20 font-bold text-white text-xl">Robot Reveal 2024</span>
-          </div>
-          <div className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-white/10 aspect-video flex items-center justify-center cursor-pointer">
-            <Image src={`${BASE_PATH}/images/hero-bg.jpg`} alt="Highlights" fill className="object-cover opacity-70 group-hover:opacity-50 transition-opacity" />
-            <div className="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/30 transition-colors z-10" />
-            <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center z-20 group-hover:scale-110 transition-transform">
-              <Play className="w-6 h-6 text-white ml-1" />
-            </div>
-            <span className="absolute bottom-6 left-6 z-20 font-bold text-white text-xl">State Championship Highlights</span>
-          </div>
+          {videos.map((video) => (
+            <a
+              key={video.title}
+              href={video.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-white/10 aspect-video flex items-center justify-center cursor-pointer block"
+            >
+              <Image src={video.thumbnail} alt={video.title} fill className="object-cover opacity-70 group-hover:opacity-50 transition-opacity" />
+              <div className="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/30 transition-colors z-10" />
+              <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center z-20 group-hover:scale-110 transition-transform">
+                <Play className="w-6 h-6 text-white ml-1" />
+              </div>
+              <div className="absolute top-4 right-4 z-20 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/60 text-xs font-medium text-slate-300 backdrop-blur-sm">
+                <ExternalLink className="w-3.5 h-3.5" /> Video Link Pending
+              </div>
+              <span className="absolute bottom-6 left-6 z-20 font-bold text-white text-xl">{video.title}</span>
+            </a>
+          ))}
         </div>
       </Section>
 
