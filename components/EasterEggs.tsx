@@ -90,7 +90,7 @@ export function EasterEggs() {
         </div>
       )}
 
-      <HawkRain key={hawkRain} />
+      {hawkRain > 0 && <HawkRain key={hawkRain} />}
 
       <AnimatePresence>
         {toast && (
