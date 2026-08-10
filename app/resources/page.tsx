@@ -1,5 +1,6 @@
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
+import { TechnicalGuides } from "@/components/TechnicalGuides";
 import { Code, FileText, Cpu, BookOpen, ExternalLink, Download } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 
@@ -82,22 +83,7 @@ export default function Resources() {
         </div>
       </Section>
 
-      <Section darker title="Technical Guides">
-        <div className="bg-slate-900/50 rounded-3xl border border-white/10 p-8 md:p-12 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">More coming soon</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto mb-8">
-            We are currently drafting technical articles on our Limelight distance regression models and our experience with PedroPathing vs. Roadrunner.
-          </p>
-          <div className="flex justify-center gap-4">
-            <div className="px-6 py-2 rounded-full bg-slate-950 border border-white/10 text-slate-500 text-sm italic">
-              Limelight Regression Guide
-            </div>
-            <div className="px-6 py-2 rounded-full bg-slate-950 border border-white/10 text-slate-500 text-sm italic">
-              FSM Best Practices
-            </div>
-          </div>
-        </div>
-      </Section>
+      <TechnicalGuides />
     </>
   );
 }

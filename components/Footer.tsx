@@ -1,7 +1,18 @@
+"use client";
+
 import Link from "next/link";
-import { Code, Camera, Video, Mail } from "lucide-react";
+import { Code, Camera, Mail } from "lucide-react";
 
 export function Footer() {
+  const handleYearClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    const banner = document.createElement("div");
+    banner.textContent = "🦅 FLA-AP!";
+    banner.style.cssText = "position:fixed;top:20%;left:50%;transform:translateX(-50%);z-index:9999;font-size:3rem;font-weight:900;color:#60a5fa;pointer-events:none;animation:hawkFlap 1s ease-in-out infinite;";
+    document.body.appendChild(banner);
+    setTimeout(() => banner.remove(), 1400);
+  };
+
   return (
     <footer className="bg-slate-950 border-t border-white/10 mt-auto pt-16 pb-8">
       <div className="container mx-auto px-6 md:px-12">
@@ -50,7 +61,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Happy Hawks FTC #24813. All rights reserved.
+            © <button onClick={handleYearClick} className="hover:text-blue-400 transition-colors cursor-pointer" title="click me"> {new Date().getFullYear()}</button> Happy Hawks FTC #24813. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm text-slate-500">
             <Link href="/privacy" className="hover:text-slate-300">Privacy Policy</Link>
