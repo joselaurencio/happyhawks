@@ -1,15 +1,14 @@
 import { Section } from "@/components/Section";
-import { AnimatedCard } from "@/components/AnimatedCard";
+import { AlumniCarousel } from "@/components/AlumniCarousel";
+import { TeamGrid } from "@/components/TeamGrid";
 import Image from "next/image";
 import { BASE_PATH } from "@/lib/constants";
-import { User, Users } from "lucide-react";
 
 const teamMembers = [
   { name: "Jose L.", role: "Captain & Programming Lead" },
   { name: "Andrea S.", role: "Co-Captain & Driving Lead" },
   { name: "Isaiah B.", role: "Business & Marketing Lead" },
   { name: "Frank C.", role: "Building Lead" },
-  { name: "Sean G.", role: "Design Lead" },
   { name: "Hennessy T.", role: "Director of Development" },
   { name: "Ivet L.", role: "Director of Design" },
   { name: "Nicola C.", role: "Programmer" },
@@ -17,7 +16,6 @@ const teamMembers = [
   { name: "Brisa M.", role: "Business & Marketing" },
   { name: "Jordynn R.", role: "Business & Marketing" },
   { name: "Emilio S.", role: "Builder" },
-  { name: "Victoria G.", role: "Builder" },
   { name: "Abel M.", role: "Builder" },
   { name: "Bianca C.", role: "Builder" },
   { name: "Ethan G.", role: "Builder" },
@@ -73,16 +71,13 @@ export default function About() {
       </Section>
 
       <Section darker title="Meet the Team" subtitle="The student leaders driving our success">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {teamMembers.map((member, i) => (
-            <AnimatedCard key={member.name} delay={i * 0.05} className="text-center bg-slate-900">
-              <div className="w-16 h-16 mx-auto bg-[#052680] rounded-full flex items-center justify-center mb-4">
-                <User className="w-8 h-8 text-[#E2EDFA]" />
-              </div>
-              <h3 className="text-lg font-bold text-white mb-1">{member.name}</h3>
-              <p className="text-[#E2EDFA] text-sm opacity-80">{member.role}</p>
-            </AnimatedCard>
-          ))}
+        <TeamGrid members={teamMembers} />
+      </Section>
+
+      <Section darker title="Alumni Hall of Fame" subtitle="Legends who helped build the nest">
+        <div className="relative">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.12),transparent_70%)] pointer-events-none" />
+          <AlumniCarousel />
         </div>
       </Section>
 

@@ -10,30 +10,71 @@ export default function ScoutingGate({ children }: { children: ReactNode }) {
   const [showPassword, setShowPassword] = useState(false);
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState("");
+  const [failedAttempts, setFailedAttempts] = useState(0);
+  const [showHint, setShowHint] = useState(false);
+  const [poultry, setPoultry] = useState(false);
 
-  const submit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!password) return;
+  const tryPassword = async (pass: string) => {
     setChecking(true);
     setError("");
-    const ok = await verifyScoutingPassword(password);
+    const ok = await verifyScoutingPassword(pass);
     setChecking(false);
     if (ok) {
       setPassword("");
       setUnlocked(true);
+    } else if (pass.trim().toLowerCase() === "barnyard") {
+      setPoultry(true);
+      setPassword("");
+      setUnlocked(true);
     } else {
       setError("Incorrect password. Please try again.");
+      const next = failedAttempts + 1;
+      setFailedAttempts(next);
+      if (next >= 3) {
+        setShowHint(true);
+        setTimeout(() => setShowHint(false), 6000);
+      }
     }
+  };
+
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!password) return;
+    await tryPassword(password);
   };
 
   if (unlocked) {
     return (
       <>
+        {poultry && (
+          <div className="fixed inset-0 z-[150] pointer-events-none overflow-hidden">
+            {Array.from({ length: 24 }).map((_, i) => (
+              <span
+                key={i}
+                className="absolute text-2xl"
+                style={{
+                  left: `${(i * 37) % 100}%`,
+                  top: `${(i * 53) % 100}%`,
+                  animation: "hawkFlap 2s ease-in-out infinite",
+                  animationDelay: `${(i % 8) * 0.25}s`,
+                }}
+              >
+                🐔
+              </span>
+            ))}
+            <div className="absolute top-6 inset-x-0 text-center">
+              <span className="px-6 py-2 rounded-full bg-slate-950/90 border border-amber-400/40 text-amber-400 text-sm font-bold backdrop-blur-xl">
+                🐔 BARNYARD MODE ACTIVATED
+              </span>
+            </div>
+          </div>
+        )}
         {children}
         <button
           onClick={() => {
             lockScouting();
             setUnlocked(false);
+            setPoultry(false);
           }}
           className="mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-xs font-medium text-slate-400"
         >
@@ -78,6 +119,11 @@ export default function ScoutingGate({ children }: { children: ReactNode }) {
           </div>
 
           {error && <p className="text-red-400 text-sm text-left">{error}</p>}
+          {showHint && (
+            <p className="text-amber-400/90 text-sm text-left font-mono animate-pulse">
+              hint: it&apos;s not 12345
+            </p>
+          )}
 
           <button
             type="submit"

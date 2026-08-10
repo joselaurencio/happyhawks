@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -41,6 +41,9 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [shaking, setShaking] = useState(false);
+  const [jetpack, setJetpack] = useState(false);
+  const logoClicks = useRef<number[]>([]);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -49,14 +52,42 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleLogoClick = () => {
+    const now = Date.now();
+    logoClicks.current = logoClicks.current.filter((t) => now - t < 2000);
+    logoClicks.current.push(now);
+
+    if (logoClicks.current.length >= 5) {
+      logoClicks.current = [];
+      setJetpack((j) => !j);
+      return;
+    }
+
+    if (logoClicks.current.length === 3) {
+      setShaking(true);
+      setTimeout(() => setShaking(false), 600);
+    }
+  };
+
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${scrolled ? "bg-slate-950/80 backdrop-blur-md border-white/10 shadow-lg py-3" : "bg-transparent border-transparent py-5"}`}>
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group z-50 relative">
-          <div className="w-10 h-10 rounded-full overflow-hidden bg-white/5 border border-white/10 group-hover:scale-105 transition-transform shrink-0">
+        <Link href="/" className="flex items-center gap-3 group z-50 relative" onClick={handleLogoClick}>
+          <div className={`w-10 h-10 rounded-full overflow-hidden bg-white/5 border border-white/10 group-hover:scale-105 transition-transform shrink-0 relative ${shaking ? "animate-[hawkShake_0.6s_ease-in-out]" : ""}`}>
             <Image src={`${BASE_PATH}/images/logo.jpeg`} alt="Happy Hawks Logo" width={40} height={40} className="object-cover w-full h-full" />
+            {jetpack && (
+              <motion.div
+                key="flame"
+                animate={{ scaleY: [1, 1.5, 1] }}
+                transition={{ repeat: Infinity, duration: 0.4 }}
+                className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-3 bg-gradient-to-t from-amber-400 to-orange-600 rounded-full"
+                style={{ transformOrigin: "top", animation: "hawkFlame 0.4s infinite" }}
+              />
+            )}
           </div>
-          <span className="text-xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors">Happy Hawks</span>
+          <span className={`text-xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors ${jetpack ? "animate-[hawkTilt_0.8s_ease-in-out_infinite]" : ""}`}>
+            {jetpack ? "Happy Hawks ⚡" : "Happy Hawks"}
+          </span>
         </Link>
 
         {/* Desktop Nav */}
