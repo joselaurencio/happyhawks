@@ -66,7 +66,7 @@ export default function Sponsors() {
       <Section title="Current Sponsors">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {[
-            { name: "Laurel Ridge Treatment Center", tier: "Gold" },
+            { name: "Offset Robotics", tier: "Swift" },
             { name: "R&L Overhead Doors", tier: "Silver" },
             { name: "Fred's Mobile Auto Services", tier: "Silver" },
           ].map((sponsor) => (
