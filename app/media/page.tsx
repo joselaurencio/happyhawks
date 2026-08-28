@@ -15,11 +15,6 @@ const videos = [
     thumbnail: asset("images/gallery/img_0244_55210219559_o.jpg"),
     link: "#",
   },
-  {
-    title: "State Championship Highlights",
-    thumbnail: asset("images/hero-bg.jpg"),
-    link: "#",
-  },
 ];
 
 export default function Media() {
