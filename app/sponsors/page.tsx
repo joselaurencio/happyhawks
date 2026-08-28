@@ -66,14 +66,25 @@ export default function Sponsors() {
       <Section title="Current Sponsors">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {[
-            { name: "MMP Engineering", tier: "Silver" },
+            { name: "MMP Engineering", tier: "Silver", link: "https://mmp-e.com/" },
             { name: "Premium Overhead Doors", tier: "Silver" },
-          ].map((sponsor) => (
-            <div key={sponsor.name} className="bg-slate-900 rounded-2xl p-8 flex flex-col items-center justify-center border border-white/5 hover:border-[#E2EDFA]/30 transition-all gap-3">
-              <div className="text-lg font-bold text-white text-center">{sponsor.name}</div>
-              <div className="text-sm text-[#E2EDFA] font-medium px-3 py-1 rounded-full bg-[#052680]/30 border border-[#E2EDFA]/20">{sponsor.tier} Hawk</div>
-            </div>
-          ))}
+          ].map((sponsor) => {
+            const Card = (
+              <div className="bg-slate-900 rounded-2xl p-8 flex flex-col items-center justify-center border border-white/5 hover:border-[#E2EDFA]/30 transition-all gap-3">
+                <div className="text-lg font-bold text-white text-center">{sponsor.name}</div>
+                <div className="text-sm text-[#E2EDFA] font-medium px-3 py-1 rounded-full bg-[#052680]/30 border border-[#E2EDFA]/20">{sponsor.tier} Hawk</div>
+              </div>
+            );
+            return (
+              <div key={sponsor.name} className="flex">
+                {sponsor.link ? (
+                  <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="w-full">
+                    {Card}
+                  </a>
+                ) : Card}
+              </div>
+            );
+          })}
         </div>
         
         <div className="text-center">
