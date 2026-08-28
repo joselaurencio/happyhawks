@@ -7,9 +7,9 @@ import { asset } from "@/lib/constants";
 const teamMembers = [
   { name: "Jose L.", role: "Programming" },
   { name: "Andrea S.", role: "Driving & Building" },
-  { name: "Isaiah B.", role: "Business & Marketing Lead" },
-  { name: "Hennessy T.", role: "Director of Development" },
-  { name: "Ivet L.", role: "Director of Design" },
+  { name: "Isaiah B.", role: "Business" },
+  { name: "Hennessy T.", role: "Business" },
+  { name: "Ivet L.", role: "Business" },
   { name: "Camila", role: "Business" },
   { name: "Jackson", role: "Building" },
   { name: "Ethan G.", role: "Builder" },
