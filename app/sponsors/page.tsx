@@ -66,9 +66,8 @@ export default function Sponsors() {
       <Section title="Current Sponsors">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {[
-            { name: "Offset Robotics", tier: "Swift" },
-            { name: "R&L Overhead Doors", tier: "Silver" },
-            { name: "Fred's Mobile Auto Services", tier: "Silver" },
+            { name: "MMP Engineering", tier: "Silver" },
+            { name: "Premium Overhead Doors", tier: "Silver" },
           ].map((sponsor) => (
             <div key={sponsor.name} className="bg-slate-900 rounded-2xl p-8 flex flex-col items-center justify-center border border-white/5 hover:border-[#E2EDFA]/30 transition-all gap-3">
               <div className="text-lg font-bold text-white text-center">{sponsor.name}</div>
@@ -90,7 +89,19 @@ export default function Sponsors() {
         </div>
       </Section>
 
-      <Section darker title="Sponsorship Tiers" subtitle="Every level makes a difference">
+      <Section darker title="Thank You to Our Volunteers">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="text-4xl mb-6">🛠️</div>
+          <p className="text-lg text-slate-300 leading-relaxed">
+            A huge thank you to every parent, mentor, and community member who volunteered their time, lent us tools and equipment, and supplied materials throughout the season.
+          </p>
+          <p className="text-lg text-slate-300 leading-relaxed mt-4">
+            Your generosity behind the scenes is what makes building this team possible — we couldn&apos;t do it without you.
+          </p>
+        </div>
+      </Section>
+
+      <Section title="Sponsorship Tiers" subtitle="Every level makes a difference">
         {/* Top tier featured */}
         <div className="mb-6">
           {sponsorTiers.filter(t => t.highlight).map((tier) => (
