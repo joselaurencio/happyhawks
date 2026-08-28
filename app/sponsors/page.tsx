@@ -102,7 +102,6 @@ export default function Sponsors() {
 
       <Section darker title="Thank You to Our Volunteers">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="text-4xl mb-6">🛠️</div>
           <p className="text-lg text-slate-300 leading-relaxed">
             A huge thank you to every parent, mentor, and community member who volunteered their time, lent us tools and equipment, and supplied materials throughout the season.
           </p>
