@@ -5,19 +5,19 @@ import Image from "next/image";
 import { asset } from "@/lib/constants";
 
 const teamMembers = [
-  { name: "Jose L.", role: "Captain & Programming Lead" },
-  { name: "Andrea S.", role: "Co-Captain & Driving Lead" },
+  { name: "Jose L.", role: "Programming" },
+  { name: "Andrea S.", role: "Driving & Building" },
   { name: "Isaiah B.", role: "Business & Marketing Lead" },
   { name: "Hennessy T.", role: "Director of Development" },
   { name: "Ivet L.", role: "Director of Design" },
-  { name: "Camila", role: "Member" },
-  { name: "Jackson", role: "Member" },
+  { name: "Camila", role: "Business" },
+  { name: "Jackson", role: "Building" },
   { name: "Ethan G.", role: "Builder" },
-  { name: "Kevin", role: "Member" },
-  { name: "Kehlani", role: "Member" },
-  { name: "Xavier", role: "Member" },
+  { name: "Kevin", role: "Builder" },
+  { name: "Kehlani", role: "Business" },
+  { name: "Xavier", role: "Programming" },
   { name: "Emilio S.", role: "Builder" },
-  { name: "Abel M.", role: "Builder" },
+  { name: "Abel M.", role: "Driver" },
 ];
 
 const mentors = [
