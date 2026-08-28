@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Play, ExternalLink } from "lucide-react";
+import { Play, ExternalLink, X } from "lucide-react";
 import Image from "next/image";
 
 const BUFFER_LINES = [
@@ -13,11 +13,23 @@ const BUFFER_LINES = [
   "Asking the head hawk...",
 ];
 
+function getYouTubeId(link: string): string | null {
+  if (!link || link === "#") return null;
+  const match = link.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{6,})/);
+  return match ? match[1] : null;
+}
+
 export function VideoCard({ title, thumbnail, link }: { title: string; thumbnail: string; link: string }) {
   const [state, setState] = useState<"idle" | "buffering" | "done">("idle");
+  const [embed, setEmbed] = useState<string | null>(null);
+  const youtubeId = getYouTubeId(link);
 
   const handlePlay = () => {
     if (state !== "idle") return;
+    if (youtubeId) {
+      setEmbed(`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1`);
+      return;
+    }
     if (link && link !== "#") {
       window.open(link, "_blank", "noopener,noreferrer");
       return;
@@ -27,18 +39,39 @@ export function VideoCard({ title, thumbnail, link }: { title: string; thumbnail
   };
 
   const line = BUFFER_LINES[title.length % BUFFER_LINES.length];
+  const badge = youtubeId ? "Plays Inline" : link && link !== "#" ? "Watch on YouTube" : "Video Link Pending";
 
   return (
-    <div className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-white/10 aspect-video flex items-center justify-center cursor-pointer block">
+    <div className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-white/10 aspect-video flex items-center justify-center">
       <Image src={thumbnail} alt={title} fill className="object-cover opacity-70 group-hover:opacity-50 transition-opacity" />
       <div className="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/30 transition-colors z-10" />
       <button onClick={handlePlay} className="relative z-20 w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
         <Play className="w-6 h-6 text-white ml-1" />
       </button>
       <div className="absolute top-4 right-4 z-20 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/60 text-xs font-medium text-slate-300 backdrop-blur-sm">
-        <ExternalLink className="w-3.5 h-3.5" /> Video Link Pending
+        {badge === "Video Link Pending" && <ExternalLink className="w-3.5 h-3.5" />}
+        {badge}
       </div>
       <span className="absolute bottom-6 left-6 z-20 font-bold text-white text-xl">{title}</span>
+
+      {embed && (
+        <div className="absolute inset-0 z-30 bg-slate-950">
+          <iframe
+            src={embed}
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-full h-full"
+          />
+          <button
+            onClick={() => setEmbed(null)}
+            className="absolute top-3 right-3 z-40 w-8 h-8 rounded-full bg-slate-950/80 backdrop-blur-sm text-white/80 hover:text-white flex items-center justify-center border border-white/10"
+            aria-label="Close video"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
+      )}
 
       <AnimatePresence>
         {state === "buffering" && (

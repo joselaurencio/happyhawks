@@ -6,6 +6,11 @@ import { asset } from "@/lib/constants";
 
 const videos = [
   {
+    title: "2026 Competition Montage",
+    thumbnail: asset("images/montage-thumb.jpg"),
+    link: "https://youtu.be/g9hTeWSDbzc",
+  },
+  {
     title: "Robot Reveal 2024",
     thumbnail: asset("images/gallery/img_0244_55210219559_o.jpg"),
     link: "#",
