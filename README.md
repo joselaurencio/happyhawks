@@ -26,11 +26,16 @@ This is the site for our FIRST Tech Challenge team, SHCA Happy Hawks out of Scen
 ## How to change stuff
 
 ### Photos
-Throw images into `public/images/gallery/` (the Flickr `_o.jpg` files work). Then the gallery and hero carousel need their file lists updated by hand:
-- `components/Gallery.tsx` — the `images` array near the top
-- `components/HeroCarousel.tsx` — same thing
+Photos are **not** in this repo. They live in the [`happyhawks-assets`](https://github.com/joselaurencio/happyhawks-assets) repo and are served through the jsDelivr CDN (`asset()` helper in `lib/constants.ts`).
 
-**Important:** the filename in the code has to match the actual file exactly. If you copy a file and macOS adds " copy" to the name, it'll 404 on the site. That already bit us once.
+To add a photo:
+1. Put the file in `happyhawks-assets/images/gallery/` (the Flickr `_o.jpg` files work) and push it.
+2. Add the filename to the `images` array:
+   - `components/Gallery.tsx` — the `images` array near the top
+   - `components/HeroCarousel.tsx` — same thing
+3. Purge the jsDelivr cache so the new file goes live: `https://purge.jsdelivr.net/gh/joselaurencio/happyhawks-assets@main/images/gallery/<filename>`
+
+**Important:** the filename in the code has to match the file in the assets repo exactly. If you copy a file and macOS adds " copy" to the name, it'll 404 on the site. That already bit us once.
 
 ### Team, alumni, mentors
 They're just arrays at the top of the files:
@@ -42,7 +47,7 @@ They're just arrays at the top of the files:
 Edit the `videos` array at the top of `app/media/page.tsx`. Each one has a `link` — put a real YouTube URL there and the play button opens it. If it's `"#"` it shows the fake buffering gag instead.
 
 ### Portfolios
-Just drop `.pdf` files into `public/portfolio/`. The page picks them up automatically and sorts newest first by filename.
+Portfolio PDFs also live in the `happyhawks-assets` repo under `portfolio/` (they're served via jsDelivr too, so keep each file under 20 MB). Add a new entry to the `portfolios` array in `app/portfolio/page.tsx` — it does not auto-scan the directory anymore. Newest first.
 
 ### Sponsorship packet
 Swap in the new file at `public/Happy_Hawks_Sponsorship_Packet.pdf`. The Sponsors page button points at it.

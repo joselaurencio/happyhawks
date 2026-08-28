@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BASE_PATH } from "@/lib/constants";
+import { asset } from "@/lib/constants";
 import { ArrowRight, Trophy, Users, Eye, Calendar, Award, MonitorPlay, Clapperboard, Megaphone } from "lucide-react";
 import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="flex justify-center mb-8">
               <div className="relative group/logo">
                 <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl shadow-blue-500/20 ring-4 ring-[#052680]/40 transition-transform group-hover/logo:scale-105">
-                  <Image src={`${BASE_PATH}/images/logo.jpeg`} alt="Happy Hawks Logo" width={144} height={144} className="object-cover w-full h-full" />
+                  <Image src={asset("images/logo.jpeg")} alt="Happy Hawks Logo" width={144} height={144} className="object-cover w-full h-full" />
                 </div>
                 <span className="pointer-events-none absolute -bottom-3 left-1/2 -translate-x-1/2 translate-y-full opacity-0 group-hover/logo:opacity-100 transition-all duration-300 whitespace-nowrap px-4 py-2 rounded-xl bg-slate-950/95 border border-blue-500/30 text-xs font-medium text-blue-300 shadow-xl shadow-blue-500/20 backdrop-blur-xl">
                   Sharp talons. Sharper code. 🦅
@@ -169,7 +169,7 @@ export default function Home() {
             </div>
             <div className="bg-slate-950 min-h-[400px] relative rounded-r-2xl overflow-hidden flex items-center justify-center border-l border-white/5">
               <Image 
-                src={`${BASE_PATH}/images/robot.png`} 
+                src={asset("images/robot.png")} 
                 alt="FTC Robot Render" 
                 fill 
                 className="object-cover"

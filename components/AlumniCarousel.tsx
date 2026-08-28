@@ -10,6 +10,12 @@ const alumni = [
   { name: "Daniel M.", role: "Builder", classOf: 24, initials: "D", emoji: "🏗️" },
   { name: "Hunter G.", role: "Programming", classOf: 25, initials: "H", emoji: "💻" },
   { name: "Gael J.", role: "Build Lead", classOf: 27, initials: "G", emoji: "⚙️" },
+  { name: "Frank C.", role: "Building Lead", classOf: 27, initials: "F", emoji: "🛠️" },
+  { name: "Nicola C.", role: "Programmer", classOf: 27, initials: "N", emoji: "💽" },
+  { name: "Bianca C.", role: "Builder", classOf: 27, initials: "B", emoji: "🔩" },
+  { name: "Johanna A.", role: "Business & Programming", classOf: 28, initials: "J", emoji: "📊" },
+  { name: "Brisa M.", role: "Business & Marketing", classOf: 28, initials: "B", emoji: "🎨" },
+  { name: "Jordynn R.", role: "Business & Marketing", classOf: 28, initials: "J", emoji: "📣" },
 ];
 
 const CARD_WIDTH = 260;

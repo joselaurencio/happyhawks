@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Code, Camera, Mail } from "lucide-react";
+import { Code, Mail } from "lucide-react";
+import { InstagramIcon } from "@/components/InstagramIcon";
 
 export function Footer() {
   const handleYearClick = () => {
@@ -25,7 +26,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <Link href="https://www.instagram.com/shcarobotics/" target="_blank" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:bg-slate-800 transition-colors">
-                <Camera className="w-5 h-5" />
+                <InstagramIcon className="w-5 h-5" />
               </Link>
               <Link href="https://github.com/HappyHawks" target="_blank" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:bg-slate-800 transition-colors">
                 <Code className="w-5 h-5" />

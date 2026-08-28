@@ -1,27 +1,15 @@
 import { Section } from "@/components/Section";
 import { BookOpen } from "lucide-react";
-import fs from 'fs';
-import path from 'path';
+import { asset } from "@/lib/constants";
 
-export default async function PortfolioPage() {
-  // Read the portfolio directory dynamically
-  const portfolioDir = path.join(process.cwd(), 'public', 'portfolio');
-  let portfolios: string[] = [];
-  
-  try {
-    if (fs.existsSync(portfolioDir)) {
-      portfolios = fs.readdirSync(portfolioDir).filter(file => file.endsWith('.pdf'));
-    }
-  } catch (error) {
-    console.error("Failed to read portfolio directory:", error);
-  }
+const portfolios = [
+  { file: "Happy_Hawks_Portfolio_25_26.pdf" },
+  { file: "Happy_Hawks_Portfolio_24_25.pdf" },
+];
 
-  // Sort portfolios assuming naming convention puts newest first or just alphabetical
-  portfolios.sort().reverse();
-  
-  // Use the first portfolio as the default active one
-  const activePortfolio = portfolios.length > 0 ? portfolios[0] : null;
+const activePortfolio = portfolios[0];
 
+export default function PortfolioPage() {
   return (
     <>
       <div className="pt-32 pb-16 bg-slate-950 border-b border-white/5">
@@ -39,30 +27,28 @@ export default async function PortfolioPage() {
               <BookOpen className="w-5 h-5 text-[#E2EDFA]" />
               Portfolio Library
             </h3>
-            
+
             <div className="space-y-2">
-              {portfolios.length === 0 ? (
-                <p className="text-slate-400 text-sm">No portfolios uploaded yet.</p>
-              ) : (
-                portfolios.map((file) => {
-                  const name = file.replace('.pdf', '').replace(/_/g, ' ');
-                  const isActive = file === activePortfolio;
-                  return (
-                    <a
-                      key={file}
-                      href={`/portfolio/${file}`} // Note: For a true interactive viewer, this could be client-side state, but a direct link or query param works. For MVP, we'll just link to the PDF directly or use an iframe below.
-                      className={`block p-4 rounded-xl border transition-colors ${
-                        isActive 
-                          ? "bg-[#052680]/20 border-[#E2EDFA] text-[#E2EDFA]" 
-                          : "bg-slate-900 border-white/5 text-slate-300 hover:border-[#052680]"
-                      }`}
-                    >
-                      <div className="font-semibold">{name}</div>
-                      <div className="text-xs opacity-70 mt-1">PDF Document</div>
-                    </a>
-                  )
-                })
-              )}
+              {portfolios.map((portfolio) => {
+                const name = portfolio.file.replace('.pdf', '').replace(/_/g, ' ');
+                const isActive = portfolio.file === activePortfolio.file;
+                return (
+                  <a
+                    key={portfolio.file}
+                    href={asset(`portfolio/${portfolio.file}`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block p-4 rounded-xl border transition-colors ${
+                      isActive
+                        ? "bg-[#052680]/20 border-[#E2EDFA] text-[#E2EDFA]"
+                        : "bg-slate-900 border-white/5 text-slate-300 hover:border-[#052680]"
+                    }`}
+                  >
+                    <div className="font-semibold">{name}</div>
+                    <div className="text-xs opacity-70 mt-1">PDF Document</div>
+                  </a>
+                )
+              })}
             </div>
           </div>
 
@@ -70,8 +56,8 @@ export default async function PortfolioPage() {
           <div className="lg:col-span-3">
             <div className="bg-slate-900 rounded-3xl border border-white/10 p-2 min-h-[800px] flex items-center justify-center relative">
               {activePortfolio ? (
-                <iframe 
-                  src={`/portfolio/${activePortfolio}#toolbar=0`} 
+                <iframe
+                  src={`${asset(`portfolio/${activePortfolio.file}`)}#toolbar=0`}
                   className="w-full h-full min-h-[800px] rounded-2xl"
                   title="Portfolio Viewer"
                 />

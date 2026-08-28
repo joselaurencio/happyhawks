@@ -26,6 +26,12 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# static assets are served from the happyhawks-assets repo (jsDelivr CDN).
+# keep a local copy here only if you need offline dev; don't commit it.
+/public/images
+/portfolios
+/public/portfolio
+
 # vercel
 .vercel
 

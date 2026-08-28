@@ -2,23 +2,22 @@ import { Section } from "@/components/Section";
 import { AlumniCarousel } from "@/components/AlumniCarousel";
 import { TeamGrid } from "@/components/TeamGrid";
 import Image from "next/image";
-import { BASE_PATH } from "@/lib/constants";
+import { asset } from "@/lib/constants";
 
 const teamMembers = [
   { name: "Jose L.", role: "Captain & Programming Lead" },
   { name: "Andrea S.", role: "Co-Captain & Driving Lead" },
   { name: "Isaiah B.", role: "Business & Marketing Lead" },
-  { name: "Frank C.", role: "Building Lead" },
   { name: "Hennessy T.", role: "Director of Development" },
   { name: "Ivet L.", role: "Director of Design" },
-  { name: "Nicola C.", role: "Programmer" },
-  { name: "Johanna A.", role: "Business & Programming" },
-  { name: "Brisa M.", role: "Business & Marketing" },
-  { name: "Jordynn R.", role: "Business & Marketing" },
+  { name: "Camila", role: "Member" },
+  { name: "Jackson", role: "Member" },
+  { name: "Ethan G.", role: "Builder" },
+  { name: "Kevin", role: "Member" },
+  { name: "Kehlani", role: "Member" },
+  { name: "Xavier", role: "Member" },
   { name: "Emilio S.", role: "Builder" },
   { name: "Abel M.", role: "Builder" },
-  { name: "Bianca C.", role: "Builder" },
-  { name: "Ethan G.", role: "Builder" },
 ];
 
 const mentors = [
@@ -61,7 +60,7 @@ export default function About() {
           </div>
           <div className="bg-slate-900 rounded-3xl border border-white/10 p-2 min-h-[400px] flex items-center justify-center relative overflow-hidden">
             <Image 
-              src={`${BASE_PATH}/images/gallery/img_0244_55210219559_o.jpg`} 
+              src={asset("images/gallery/img_0244_55210219559_o.jpg")} 
               alt="Happy Hawks Robotics Team" 
               fill 
               className="object-cover rounded-2xl"

@@ -2,7 +2,7 @@ import { Section } from "@/components/Section";
 import { AnimatedCard } from "@/components/AnimatedCard";
 import { TechnicalGuides } from "@/components/TechnicalGuides";
 import { Code, FileText, Cpu, BookOpen, ExternalLink, Download } from "lucide-react";
-import { BASE_PATH } from "@/lib/constants";
+import { asset } from "@/lib/constants";
 
 const resources = [
   {
@@ -16,7 +16,7 @@ const resources = [
     title: "Engineering Portfolio",
     icon: FileText,
     desc: "The 2025-2026 'DECODE' portfolio detailing our design process, math, and outreach impact.",
-    link: `${BASE_PATH}/portfolio/Happy_Hawks_Portfolio_25_26.pdf`,
+    link: asset("portfolio/Happy_Hawks_Portfolio_25_26.pdf"),
     type: "PDF"
   },
   {
